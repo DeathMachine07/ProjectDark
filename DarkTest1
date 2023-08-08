@@ -1,0 +1,1648 @@
+-- start
+
+local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+
+ 
+
+--windows
+
+local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.1")
+
+ 
+
+-- servers
+
+local mainserv = scriptswin:Server("Syr Scripts", "")
+
+local secserv = scriptswin:Server("Tool Scripts & Misc", "")
+
+local trdserv = scriptswin:Server("FE/Fun Scripts", "")
+
+ 
+
+-- channels
+
+local mm2btns = mainserv:Channel("Murder Mystery 2")
+
+local swbtns = mainserv:Channel("Sky Wars by Voxels")
+
+local sw2btns = mainserv:Channel("Sky Wars")
+
+local tohbtns = mainserv:Channel("Tower Of Hell")
+
+local hsebtns = mainserv:Channel("Hide and Seek Extreme")
+
+local evadebtns = mainserv:Channel("Evade")
+
+local doorsbtns = mainserv:Channel("Doors")
+
+local ambtns = mainserv:Channel("Adopt Me")
+
+local arsbtns = mainserv:Channel("Arsenal")
+
+local bssbtns = mainserv:Channel("Be Swarm Simulator")
+
+local pgybtns = mainserv:Channel("Piggy")
+
+local ntbtns = mainserv:Channel("Ninja Tycoon")
+
+local rt2btns = mainserv:Channel("Restaurant Tycoon 2")
+
+local apbtns = mainserv:Channel("Apeirophobia")
+
+local ftfbtns = mainserv:Channel("Flee the Facility")
+
+local zubtns = mainserv:Channel("Zombie Uprising")
+
+ 
+
+--channels for other things
+
+local miscbtns = secserv:Channel("Tool Scripts")
+
+local funbtns = trdserv:Channel("Fun Scripts")
+
+ 
+
+--scripts
+
+bfbtns:Button("Mukuro Hub BF", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/DonateMe/main/OldBf"))()
+
+end)
+
+ 
+
+bfbtns:Button("HoHo Hub", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+
+end)
+
+ 
+
+bfbtns:Button("Zaque Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Mei2232/ZaqueHub/main/Zaque%20Hub"))()
+
+end)
+
+ 
+
+bfbtns:Button("Domadic Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Domadicoof/Domadicoof/main/Domadichub/NottoGay/Start.ranscript"))()
+
+end)
+
+ 
+
+bfbtns:Button("String X", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StringV2/StringHub/main/BF.txt", true))()
+
+end)
+
+ 
+
+bfbtns:Button("NevaHub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2"))()
+
+end)
+
+ 
+
+bfbtns:Button("Heater Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HeatHuh/HeaterHub/main/HeaterLoader"))()
+
+end)
+
+ 
+
+slbtns:Button("Premier Hub", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/TrustsenseDev/Utilities/main/Premier.lua', true))()
+
+end)
+
+ 
+
+slbtns:Button("V.G Hub", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+
+end)
+
+ 
+
+slbtns:Button("Project Meow", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/L1ZOT/Project-PJM/main/shinido"))()
+
+end)
+
+ 
+
+slbtns:Button("Black Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xzqecc/Script/main/xzqec_changer"))()
+
+end)
+
+ 
+
+slbtns:Button("Wumpus Script", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dontsteal/donttouch/main/wump"))()
+
+end)
+
+ 
+
+slbtns:Button("Speed Hub X (best)", function()
+
+loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ahmadsgamer2/Script--Game/main/Script%20Game"))()
+
+end)
+
+ 
+
+psxbtns:Button("Project X7 Hub", function()
+
+local request = (syn and syn.request) or (http and http.request) or http_request
+
+loadstring(request({['Url']='https://x7.software',['Method']='GET'}).Body)("X7-a5KsoQGw")
+
+end)
+
+ 
+
+ 
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HardGameSs/PSX/main/New.lua", true))()
+
+end)
+
+ 
+
+psxbtns:Button("Comet Farm (Rejoin to turn off)", function()
+
+getgenv().WEBHOOK_URL = "https://discord.com/api/webhooks/1090853107816214548/Vxcs9dIe4jRfqeVbX6iHJn7ZifN4_kCPfJnI17LIINOqPfBtjzXjdG0I7B93mDORO5jS" tooloadstring(game:HttpGet("https://raw.githubusercontent.com/NukeVsCity/Scripts2023/main/COMETFARM"))()  
+
+end)
+
+ 
+
+mm2btns:Button("Grey Hub", function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/MarsQQ/ScriptHubScripts/master/MM2%20Admin%20Panel'),true))()
+
+end)
+
+ 
+
+mm2btns:Button("Purple Hub", function()
+
+loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+
+end)
+
+ 
+
+mm2btns:Button("Black Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Drifter0507/scripts/main/mm2", true))()
+
+end)
+
+ 
+
+mm2btns:Button("Eclipse UI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Doggo-cryto/EclipseMM2/master/Script", true))()
+
+end)
+
+ 
+
+mm2btns:Button("Eclipse Hub V2", function()
+
+getgenv().mainKey = "nil";
+
+ 
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+
+end)
+
+ 
+
+ 
+
+rebtns:Button("Black GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
+
+end)
+
+ 
+
+rebtns:Button("Mystery Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/i4mitty/MysteryHub/main/MysteryHub%20-%20Ragdoll%20Engine.lua"))()
+
+end)
+
+ 
+
+bwbtns:Button("VapeV4", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+
+end)
+
+ 
+
+bwbtns:Button("NightBed Script", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NTDCore/NightbedForRoblox/main/MainScript.lua", true))()
+
+end)
+
+ 
+
+swbtns:Button("Sky Wars by Voxels Vape V4", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+
+end)
+
+ 
+
+sw2btns:Button("Sky Wars Hub", function()
+
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/RedWirePlatinumTwo/RobloxScripts/main/SkywarsScript.lua"))()
+
+end)
+
+ 
+
+sw2btns:Button("SyrPro: Skywars", function()
+
+loadstring(Game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/SyrProSkyWars/main/skywarsgui.lua"))()
+
+end)
+
+ 
+
+sw2btns:Button("Green GUI", function()
+
+loadstring(game:HttpGet("https://paste.ee/r/r9gnA", true))()
+
+end)
+
+ 
+
+bhbtns:Button("Brook Heaven Troll GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MichaelScripter/MiniScript/main/Spy%20gui.lua"))()
+
+end)
+
+ 
+
+bhbtns:Button("Ice Hub Brook Heaven", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+
+end)
+
+ 
+
+tohbtns:Button("Tower Of Hell OP Script", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub', true))()
+
+end)
+
+ 
+
+tohbtns:Button("Darkrai X hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/scripts/main/TOH", true))()
+
+end)
+
+ 
+
+dhbtns:Button("Vertical Hub", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/niqu1337/vertical/main/core/script.lua'))()
+
+end)
+
+ 
+
+dhbtns:Button("Mango Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rogelioajax/lua/main/MangoHub"))()
+
+end)
+
+ 
+
+dhbtns:Button("Swag Mode (OP)", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()
+
+end)
+
+ 
+
+hsebtns:Button("Hide and Seek Extreme OP GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Bebo-Mods/BeboScripts/main/HideAndSeekExtreme.lua"))()
+
+end)
+
+ 
+
+hsebtns:Button("Frakki GUI", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/HAgidzUN"))()
+
+end)
+
+ 
+
+hsebtns:Button("OneProtocol HnS Extreme", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))()
+
+end)
+
+ 
+
+ybabtns:Button("YBA script 2", function()
+
+_G.Options = {
+
+    ["ToggleKey"] = "Delete",
+
+}
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/VoidGaster/Scripts/main/" .. tostring(game.PlaceId)),true))()
+
+end)
+
+ 
+
+lsbtns:Button("Yellow GUI", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/zQ9zFW0f"  ,true))()
+
+end)
+
+ 
+
+lsbtns:Button("Blue GUI", function()
+
+loadstring(game:HttpGetAsync('https://rentry.co/46649/raw'))()
+
+end)
+
+ 
+
+ysxbtns:Button("Autofarm GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/scriptpastebin/raw/main/23"))()
+
+end)
+
+ 
+
+ 
+
+ksagbtns:Button("Oxygen Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PerfectusMim/OXYGEN-HUB-/main/hub"))()
+
+end)
+
+ 
+
+ksagbtns:Button("Platinum Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZaRdoOx/Loader/main/PlatiniumLoader"))()
+
+end)
+
+ 
+
+ 
+
+klbtns:Button("Autofarm, Grab Fruits + more!", function()
+
+local request = (syn and syn.request) or (http and http.request) or http_request
+
+loadstring(request({["Url"]='https://x7.software',["Method"]='GET'}).Body)("X7-a5KsoQGw")
+
+end)
+
+ 
+
+klbtns:Button("BlackTrap Hub", function()
+
+loadstring(game:HttpGetAsync("https://blacktrap.org/blacktrap/users/checkpoint/Auth.txt"))()
+
+end)
+
+ 
+
+klbtns:Button("Hyper Hub", function()
+
+repeat wait() until game:IsLoaded()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DookDekDEE/Hyper/main/script.lua"))()
+
+end)
+
+ 
+
+evadebtns:Button("Evade Script OP", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua"))()
+
+end)
+
+ 
+
+evadebtns:Button("Darkrai X Evade", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()
+
+end)
+
+ 
+
+doorsbtns:Button("Doors GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mazzikasjjzjzj/Key/main/DOORS%20%20%5BNEW%5D"))()
+
+end)
+
+ 
+
+doorsbtns:Button("Doors Gray GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua"))()
+
+end)
+
+ 
+
+doorsbtns:Button("MSDOORS Hub", function()
+
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
+
+end)
+
+ 
+
+ambtns:Button("Adopt Me Autofarm", function()
+
+loadstring(game:HttpGet("https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua"))()
+
+end)
+
+ 
+
+ambtns:Button("Prodigy X", function()
+
+loadstring(game:HttpGet("https://gitfront.io/r/ReQiuYTPL/wFUydaK74uGx/hub/raw/ReQiuYTPLHub.lua"))()
+
+end)
+
+ 
+
+ 
+
+arsbtns:Button("Arctic Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JusticeValley/Antarctic-Hub/main/New.lua", true))()
+
+end)
+
+ 
+
+arsbtns:Button("Hitbox Expander script", function()
+
+function getplrsname()
+
+for i,v in pairs(game:GetChildren()) do
+
+if v.ClassName == "Players" then
+
+return v.Name
+
+end
+
+end
+
+end
+
+local players = getplrsname()
+
+local plr = game[players].LocalPlayer
+
+coroutine.resume(coroutine.create(function()
+
+while  wait(1) do
+
+coroutine.resume(coroutine.create(function()
+
+for _,v in pairs(game[players]:GetPlayers()) do
+
+if v.Name ~= plr.Name and v.Character then
+
+v.Character.RightUpperLeg.CanCollide = false
+
+v.Character.RightUpperLeg.Transparency = 10
+
+v.Character.RightUpperLeg.Size = Vector3.new(13,13,13)
+
+ 
+
+v.Character.LeftUpperLeg.CanCollide = false
+
+v.Character.LeftUpperLeg.Transparency = 10
+
+v.Character.LeftUpperLeg.Size = Vector3.new(13,13,13)
+
+ 
+
+v.Character.HeadHB.CanCollide = false
+
+v.Character.HeadHB.Transparency = 10
+
+v.Character.HeadHB.Size = Vector3.new(13,13,13)
+
+ 
+
+v.Character.HumanoidRootPart.CanCollide = false
+
+v.Character.HumanoidRootPart.Transparency = 10
+
+v.Character.HumanoidRootPart.Size = Vector3.new(13,13,13)
+
+ 
+
+end
+
+end
+
+end))
+
+end
+
+end))
+
+end)
+
+ 
+
+arsbtns:Button("Boltz Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fusiongreg/BoltsHubV5/main/Main"))()
+
+end)
+
+ 
+
+ 
+
+ 
+
+katbtns:Button("JNHH Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming/Kat12/main/Kat"))()
+
+end)
+
+ 
+
+katbtns:Button("Kattoware Hub", function()
+
+loadstring(game:HttpGet('http://cattoware.tk/main.lua'))()
+
+end)
+
+ 
+
+katbtns:Button("Owl Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+
+end)
+
+ 
+
+ktybtns:Button("Kitty Black GUI (trash)", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/MwXkxRam"))()
+
+end)
+
+ 
+
+ktybtns:Button("Kitty Grey GUI (trash v2)", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/Z0DPwpNh"))()
+
+end)
+
+ 
+
+ktybtns:Button("Kitty OP GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkolymYT/Scriptss/master/KittyGUI.lua"))()
+
+end)
+
+ 
+
+bssbtns:Button("Altsego Hub", function()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/AltsegoD/script/master/BeeSwarmSimulator.lua')))()
+
+end)
+
+ 
+
+bssbtns:Button("Kometa Hub", function()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/283f3b821c3b385f66824b98a6cca600.lua"))()
+
+end)
+
+ 
+
+bssbtns:Button("Kocmoc V3", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Boxking776/kocmoc/main/kocmoc-remastered.lua"))()
+
+end)
+
+ 
+
+ 
+
+fafbtns:Button("Get all Floppas", function()
+
+for i,v in ipairs(workspace.Floppas:GetChildren()) do
+
+   firetouchinterest(v, game.Players.LocalPlayer.Character.PrimaryPart, 0)
+
+end
+
+end)
+
+ 
+
+fafbtns:Button("Purple Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
+
+end)
+
+ 
+
+pgybtns:Button("Piggy item giver OP", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/itemtp/main/PiggyModz.lua"))()
+
+end)
+
+ 
+
+rfbtns:Button("TweedLeak Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TweedLeak/Scripts/main/Rainbow-Friends.lua"))()
+
+end)
+
+ 
+
+rfbtns:Button("BorkWare", function()
+
+loadstring(game:HttpsGet("https://raw.githubusercontent.com/CorruptedClan/BorkHub/main/script.lua"))()
+
+end)
+
+ 
+
+ntbtns:Button("Black Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AliCode14/scripts/main/ninjatycoon.lua"))()
+
+end)
+
+ 
+
+ntbtns:Button("Quiz Solver", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/quizSolver/main/NinjaTycoon.lua"))()
+
+end)
+
+ 
+
+ntbtns:Button("Black GUI 2", function()
+
+loadstring(game:HttpGet("https://thedragonslayer2.github.io"))()
+
+end)
+
+ 
+
+ 
+
+tsgbtns:Button("Random Hub", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/j5dV9HrH"))()
+
+end)
+
+ 
+
+tprrbtns:Button("Tape Farm", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/TPRR/main/tapefarm.lua", true))()
+
+end)
+
+ 
+
+rt2btns:Button("One Protocol Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
+
+end)
+
+ 
+
+rt2btns:Button("Basic Script", function()
+
+warn("Requiring API")do
+
+loadstring(game:HttpGet("https://pastebin.com/raw/KMc6aBky"))();
+
+end warn("API Loaded")
+
+ 
+
+local child = object.child
+
+local descendant = object.descendant
+
+local check = object.check
+
+ 
+
+local Tycoon = game.Players.LocalPlayer.Tycoon.Value
+
+descendant.foreach(Tycoon.Items.OftenFiltered.Surface,"Bill",function(Bill)
+
+local Settings = {
+
+["name"] = "CollectBill",
+
+["model"] = Bill.Parent
+
+}
+
+ 
+
+game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
+
+end)
+
+ 
+
+local Connection,Code = descendant.on_add(Tycoon.Items.OftenFiltered.Surface,function(Bill)
+
+check.it(Bill.Name == "Bill",function()
+
+local Settings = {
+
+["name"] = "CollectBill",
+
+["model"] = Bill.Parent
+
+}
+
+ 
+
+game.ReplicatedStorage.Events.ClientTycoonInput:FireServer(Tycoon,Settings)
+
+end)
+
+end)
+
+end)
+
+ 
+
+mrtbtns:Button("Random Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OneProtocol/Project/main/Loader", true))() 
+
+end)
+
+ 
+
+mrtbtns:Button("System Exodus", function()
+
+loadstring(game:HttpGet("https://system-exodus.com/scripts/MyRestaurant/MyRestaurant.lua", true))()
+
+end)
+
+ 
+
+psbtns:Button("OniHub V2", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Phyoue/WlyMalV2/main/OniHubV2"))()
+
+end)
+
+ 
+
+psbtns:Button("Sylveon Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ogamertv12/SylveonHub/main/Mobile.lua"))()
+
+end)
+
+ 
+
+bpbtns:Button("Outlaws Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MostafaXc00dy/MostafaXc00dy/main/Outlaws%20Hub/Breaking%20Point%20V7.lua"))()
+
+end)
+
+ 
+
+bpbtns:Button("Buster GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ColdStep2/Breaking-Point-Funny-Squid-Hax/main/Breaking%20Point%20Funny%20Squid%20Hax",true))()
+
+end)
+
+ 
+
+bpbtns:Button("Inf credits (dds only)", function()
+
+getgenv().AutoFarm = true --enables / disables AutoFarm
+
+getgenv().ServerHop = false --enables / disables server hop, add to autoexec if you enable this.
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/2vsh/breakingpoint/main/mainscript.lua"))()
+
+end)
+
+ 
+
+jbbtns:Button("Sensation Hub", function()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/99606f43e2dac85f6afc1d93d0a02d2d.lua"))()
+
+end)
+
+ 
+
+jbbtns:Button("Evo V4", function()
+
+loadstring(game:HttpGetAsync("https://projectevo.xyz/v4/script.lua", true))()
+
+end)
+
+ 
+
+jbbtns:Button("Flare Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/flareG"))()
+
+end)
+
+ 
+
+ddbtns:Button("ZenX Beta (Paid)", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CorruptedClan/bananabunch/main/renamed.lua.txt"))()
+
+end)
+
+ 
+
+mvsdbtns:Button("Black Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0murder", true))()
+
+end)
+
+ 
+
+mvsdbtns:Button("SyrHub's MvS Duel", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/MenTU2C0"))()
+
+end)
+
+ 
+
+vtbtns:Button("Owl Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()
+
+end)
+
+ 
+
+apbtns:Button("Shadow Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ShadowScripts4Roblox/PROTECTEDLUA/main/Scripts/APEIROPHOBIA/1.0.%3Blua"))()
+
+end)
+
+ 
+
+apbtns:Button("Cyan GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XCD7/x/main/x", true))()
+
+end)
+
+ 
+
+blbtns:Button("Yogurt Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yogurtsss/trashs-scripts-obfuscated/main/Boxing%20League", true))()
+
+end)
+
+ 
+
+plsbtns:Button("Black GUI", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm"))()
+
+end)
+
+ 
+
+madbtns:Button("Mcarch Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Cesare0328/my-scripts/main/MCARCH2.lua", true))()
+
+end)
+
+ 
+
+madbtns:Button("Black Hub", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/8Q7y93US", true))()
+
+end)
+
+ 
+
+ 
+
+zubtns:Button("Basic Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/SlamminPig/rblxgames/main/Zombie%20Uprising/ZombieUprisingGUI"))()
+
+end)
+
+ 
+
+prisonbtns:Button("Nexus Hub", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+
+end)
+
+ 
+
+--tools
+
+miscbtns:Button("PlayerESP", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/DeathMachine07/ProjectDark/main/PlayerESP", true))()
+
+end)
+
+ 
+
+miscbtns:Button("Fly GUI Mobile", function()
+
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\103\105\115\116\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\109\101\111\122\111\110\101\89\84\47\98\102\48\51\55\100\102\102\57\102\48\97\55\48\48\49\55\51\48\52\100\100\100\54\55\102\100\99\100\51\55\48\47\114\97\119\47\101\49\52\101\55\52\102\52\50\53\98\48\54\48\100\102\53\50\51\51\52\51\99\102\51\48\98\55\56\55\48\55\52\101\98\51\99\53\100\50\47\97\114\99\101\117\115\37\50\53\50\48\120\37\50\53\50\48\102\108\121\37\50\53\50\48\50\37\50\53\50\48\111\98\102\108\117\99\97\116\111\114\39\41\44\116\114\117\101\41\41\40\41\10\10")()
+
+end)
+
+ 
+
+miscbtns:Button("Anti AFK Script", function()
+
+local vu = game:GetService("VirtualUser")
+
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+   wait(1)
+
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+
+end)
+
+end)
+
+ 
+
+miscbtns:Button("Infinite Yield Script", function()
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+ 
+
+miscbtns:Button("Infinite Jump", function()
+
+local InfiniteJumpEnabled = true
+
+game:GetService("UserInputService").JumpRequest:connect(function()
+
+            if InfiniteJumpEnabled then
+
+            game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+
+            end
+
+end)
+
+end)
+
+ 
+
+miscbtns:Button("Fly GUI V3", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+
+end)
+
+ 
+
+miscbtns:Button("Fullbright", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+
+end)
+
+ 
+
+--third server Scripts
+
+ 
+
+funbtns:Button("Arcexus System", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+
+end)
+
+ 
+
+funbtns:Button("LynX", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/LynX/main/KeySystem/Loader.lua"))()
+
+end)
+
+ 
+
+funbtns:Button("Headless FE", function()
+
+ 
+
+--Objects
+
+local ScreenGui = Instance.new("ScreenGui")
+
+local main = Instance.new("Frame")
+
+local title = Instance.new("TextLabel")
+
+local Headless = Instance.new("TextButton")
+
+local OneLeg = Instance.new("TextButton")
+
+local close = Instance.new("TextButton")
+
+local openmain = Instance.new("Frame")
+
+local open = Instance.new("TextButton")
+
+ 
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+ 
+
+main.Name = "main"
+
+main.Parent = ScreenGui
+
+main.BackgroundColor3 = Color3.new(0, 0, 0)
+
+main.Position = UDim2.new(0.0203577988, 0, 0.641277611, 0)
+
+main.Size = UDim2.new(0, 332, 0, 211)
+
+main.Visible = false
+
+main.Active = true
+
+main.Draggable = true
+
+ 
+
+title.Name = "title"
+
+title.Parent = main
+
+title.BackgroundColor3 = Color3.new(1, 0, 1)
+
+title.Size = UDim2.new(0, 332, 0, 31)
+
+title.Font = Enum.Font.GothamBold
+
+title.Text = "qjbnbalivemobile1#0946"
+
+title.TextColor3 = Color3.new(0, 0, 0)
+
+title.TextSize = 17
+
+ 
+
+Headless.Name = "Headless"
+
+Headless.Parent = main
+
+Headless.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+
+Headless.Position = UDim2.new(0.036144577, 0, 0.379146934, 0)
+
+Headless.Size = UDim2.new(0, 110, 0, 50)
+
+Headless.Font = Enum.Font.GothamBold
+
+Headless.Text = "Headless"
+
+Headless.TextColor3 = Color3.new(0, 0, 0)
+
+Headless.TextScaled = true
+
+Headless.TextSize = 10
+
+Headless.TextWrapped = true
+
+Headless.MouseButton1Down:connect(function()
+
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+
+if (v:IsA("Decal")) then
+
+v:Destroy()
+
+end
+
+end
+
+end)
+
+ 
+
+OneLeg.Name = "One Leg"
+
+OneLeg.Parent = main
+
+OneLeg.BackgroundColor3 = Color3.new(0.333333, 1, 0)
+
+OneLeg.Position = UDim2.new(0.614457846, 0, 0.379146934, 0)
+
+OneLeg.Size = UDim2.new(0, 110, 0, 50)
+
+OneLeg.Font = Enum.Font.GothamBold
+
+OneLeg.Text = "One Leg"
+
+OneLeg.TextColor3 = Color3.new(0, 0, 0)
+
+OneLeg.TextScaled = true
+
+OneLeg.TextSize = 14
+
+OneLeg.TextWrapped = true
+
+OneLeg.MouseButton1Down:connect(function()
+
+game.Players.LocalPlayer.Character['Right Leg']:remove()
+
+end)
+
+ 
+
+close.Name = "close"
+
+close.Parent = main
+
+close.BackgroundColor3 = Color3.new(1, 0, 0)
+
+close.Position = UDim2.new(0.879518092, 0, 0, 0)
+
+close.Size = UDim2.new(0, 40, 0, 31)
+
+close.Font = Enum.Font.GothamBlack
+
+close.Text = "X"
+
+close.TextColor3 = Color3.new(0, 0, 0)
+
+close.TextScaled = true
+
+close.TextSize = 14
+
+close.TextWrapped = true
+
+close.MouseButton1Down:connect(function()
+
+main.Visible = false
+
+openmain.Visible = true
+
+end)
+
+ 
+
+openmain.Name = "openmain"
+
+openmain.Parent = ScreenGui
+
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+
+openmain.Position = UDim2.new(.001, 0, .79, 0)
+
+openmain.Size = UDim2.new(0, 100, 0, 28)
+
+openmain.Active = true
+
+openmain.Draggable = true
+
+ 
+
+open.Name = "open"
+
+open.Parent = openmain
+
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+
+open.Size = UDim2.new(0, 100, 0, 28)
+
+open.Font = Enum.Font.GothamBold
+
+open.Text = "OPEN"
+
+open.TextColor3 = Color3.new(0, 0, 0)
+
+open.TextSize = 18
+
+open.TextWrapped = true
+
+open.MouseButton1Down:connect(function()
+
+openmain.Visible = false
+
+main.Visible = true
+
+end)
+
+end)
+
+ 
+
+funbtns:Button("FE Fling GUI (R6 only)", function()
+
+--BROUGHT TO YOU BY RSCRIPTS.NET!--
+
+ 
+
+ 
+
+local lp = game:FindService("Players").LocalPlayer
+
+ 
+
+local function gplr(String)
+
+            local Found = {}
+
+            local strl = String:lower()
+
+            if strl == "all" then
+
+                       for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+
+                       table.insert(Found,v)
+
+                       end
+
+            elseif strl == "others" then
+
+                       for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+
+                                   if v.Name ~= lp.Name then
+
+                                   table.insert(Found,v)
+
+                                   end
+
+                       end 
+
+            elseif strl == "me" then
+
+                       for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+
+                                   if v.Name == lp.Name then
+
+                                   table.insert(Found,v)
+
+                                   end
+
+                       end 
+
+            else
+
+                       for i,v in pairs(game:FindService("Players"):GetPlayers()) do
+
+                                   if v.Name:lower():sub(1, #String) == String:lower() then
+
+                                   table.insert(Found,v)
+
+                                   end
+
+                       end 
+
+            end
+
+            return Found 
+
+end
+
+ 
+
+local function notif(str,dur)
+
+game:FindService("StarterGui"):SetCore("SendNotification", {
+
+                       Title = "yeet gui",
+
+                       Text = str,
+
+                       Icon = "rbxassetid://2005276185",
+
+                        Duration = dur or 3
+
+            })
+
+end
+
+ 
+
+--// sds
+
+ 
+
+local h = Instance.new("ScreenGui")
+
+local Main = Instance.new("ImageLabel")
+
+local Top = Instance.new("Frame")
+
+local Title = Instance.new("TextLabel")
+
+local TextBox = Instance.new("TextBox")
+
+local TextButton = Instance.new("TextButton")
+
+ 
+
+h.Name = "h"
+
+h.Parent = game:GetService("CoreGui")
+
+h.ResetOnSpawn = false
+
+ 
+
+Main.Name = "Main"
+
+Main.Parent = h
+
+Main.Active = true
+
+Main.Draggable = true
+
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+Main.BorderSizePixel = 0
+
+Main.Position = UDim2.new(0.174545452, 0, 0.459574461, 0)
+
+Main.Size = UDim2.new(0, 454, 0, 218)
+
+Main.Image = "rbxassetid://2005276185"
+
+ 
+
+Top.Name = "Top"
+
+Top.Parent = Main
+
+Top.BackgroundColor3 = Color3.fromRGB(57, 57, 57)
+
+Top.BorderSizePixel = 0
+
+Top.Size = UDim2.new(0, 454, 0, 44)
+
+ 
+
+Title.Name = "Title"
+
+Title.Parent = Top
+
+Title.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+
+Title.BorderSizePixel = 0
+
+Title.Position = UDim2.new(0, 0, 0.295454562, 0)
+
+Title.Size = UDim2.new(0, 454, 0, 30)
+
+Title.Font = Enum.Font.SourceSans
+
+Title.Text = "FE Yeet Gui (trollface edition)"
+
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+Title.TextScaled = true
+
+Title.TextSize = 14.000
+
+Title.TextWrapped = true
+
+ 
+
+TextBox.Parent = Main
+
+TextBox.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+
+TextBox.BorderSizePixel = 0
+
+TextBox.Position = UDim2.new(0.0704845786, 0, 0.270642221, 0)
+
+TextBox.Size = UDim2.new(0, 388, 0, 62)
+
+TextBox.Font = Enum.Font.SourceSans
+
+TextBox.PlaceholderText = "Who do i destroy(can be shortened)"
+
+TextBox.Text = ""
+
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+TextBox.TextScaled = true
+
+TextBox.TextSize = 14.000
+
+TextBox.TextWrapped = true
+
+ 
+
+TextButton.Parent = Main
+
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+
+TextButton.BorderSizePixel = 0
+
+TextButton.Position = UDim2.new(0.10352423, 0, 0.596330225, 0)
+
+TextButton.Size = UDim2.new(0, 359, 0, 50)
+
+TextButton.Font = Enum.Font.SourceSans
+
+TextButton.Text = "Cheese em'"
+
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+TextButton.TextScaled = true
+
+TextButton.TextSize = 14.000
+
+TextButton.TextWrapped = true
+
+ 
+
+TextButton.MouseButton1Click:Connect(function()
+
+            local Target = gplr(TextBox.Text)
+
+            if Target[1] then
+
+                       Target = Target[1]
+
+                       
+
+                       local Thrust = Instance.new('BodyThrust', lp.Character.HumanoidRootPart)
+
+                        Thrust.Force = Vector3.new(9999,9999,9999)
+
+                        Thrust.Name = "YeetForce"
+
+                       repeat
+
+                       lp.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame
+
+                                Thrust.Location = Target.Character.HumanoidRootPart.Position
+
+                       game:FindService("RunService").Heartbeat:wait()
+
+                       until not Target.Character:FindFirstChild("Head")
+
+            else
+
+                        notif("Invalid player")
+
+            end
+
+end)
+
+ 
+
+--//fsddfsdf
+
+notif("Loaded successfully! Created by mMeetMeAtBridge", 5)
+
+end)
+
+ 
+
+funbtns:Button("FE Spider", function()
+
+loadstring(game:HttpGet("https://pastebin.com/NnewD07n"))()
+
+end)
+
+ 
+
+funbtns:Button("FE Walk on Walls", function()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/geUZHr7B"))()
+
+end)
+
+ 
+
+funbtns:Button("RemoteSpy", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Forked/M%3ASimpleSpy%20V3",true))()
+
+end)
+
+ 
+
+funbtns:Button("Dark Dex", function()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+
+end)
+
