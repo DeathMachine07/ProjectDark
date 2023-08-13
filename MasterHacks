@@ -1,5 +1,5 @@
 -- start
-local DiscordLib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt")()
+local DiscordLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/discord%20lib.txt"))()
 
 --windows
 local scriptswin = DiscordLib:Window("SyrHub: Remastered v1.2.1")
@@ -614,7 +614,7 @@ end)
 end)
 
 miscbtns:Button("Fly GUI V3", function()
-loadstring(game:HttpGet("loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/LynX/main/KeySystem/Loader.lua"))()"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ScriptsLynX/LynX/main/KeySystem/Loader.lua"))()
 end)
 
 miscbtns:Button("Fly GUI Mobile", function()
