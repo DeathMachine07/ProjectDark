@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library:MakeWindow("DeathMachine DeepHacks", "Synapse")
+local Window = Library:MakeWindow("DeathMachine DeepHacks", "BloodTheme")
 
 --TABS
 local Basic = Window:NewTab("Basic")
