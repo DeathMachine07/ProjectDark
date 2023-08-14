@@ -243,7 +243,7 @@ end)
 
 HookMeta:NewButton("Set WalkSpeed to X", "OP", function()
     local old
-local humanoid = game:GetService('Players').LocalPlayer.Character.Humanoid
+local humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid
 old = hookmetamethod(game,"__index",function(self,key)
 if self == humanoid and key == "WalkSpeed" then
 return 16
