@@ -7,7 +7,7 @@ local DeepHack = Window:NewTab("DeepHack")
 local PlayerState = Window:NewTab("Player State")
 local Commands = Window:NewTab("Commands")
 local Others = Window:NewTab("Others")
-local AntiCheat  = Window:NewTab("Block Detector")
+local AntiCheat = Window:NewTab("Block Detector")
 local ESP = Window:NewTab("ESP")
 
 --SECTIONS
@@ -18,7 +18,6 @@ local DeepHacks = DeepHack:NewSection("Deep Hack")
 local Commander = Commands:NewSection("Commands")
 local Other = Others:NewSection("Others")
 local ESPs = ESP:NewSection("ESP")
-local HookMeta = AntiCheat:NewSection("Hookmeta Method")
 
 
 --EVERYTHING
