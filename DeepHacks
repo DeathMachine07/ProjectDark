@@ -18,6 +18,7 @@ local DeepHacks = DeepHack:NewSection("Deep Hack")
 local Commander = Commands:NewSection("Commands")
 local Other = Others:NewSection("Others")
 local ESPs = ESP:NewSection("ESP")
+local HookMeta = Tab:NewSection("Hookmeta Method")
 
 
 --EVERYTHING
@@ -231,11 +232,40 @@ ESP:NewButton("ESP All", "ESP", function()
     local FillColor = Color3.fromRGB(139, 0, 0) local DepthMode = "AlwaysOnTop" local FillTransparency = 0.5 local OutlineColor = Color3.fromRGB(255,255,255) local OutlineTransparency = 0 local CoreGui = game:FindService("CoreGui") local Players = game:FindService("Players") local lp = Players.LocalPlayer local connections = {} local Storage = Instance.new("Folder") Storage.Parent = CoreGui Storage.Name = "Highlight_Storage" local function Highlight(plr) local Highlight = Instance.new("Highlight") Highlight.Name = plr.Name Highlight.FillColor = FillColor Highlight.DepthMode = DepthMode Highlight.FillTransparency = FillTransparency Highlight.OutlineColor = OutlineColor Highlight.OutlineTransparency = 0 Highlight.Parent = Storage local plrchar = plr.Character if plrchar then Highlight.Adornee = plrchar end connections[plr] = plr.CharacterAdded:Connect(function(char) Highlight.Adornee = char end) end Players.PlayerAdded:Connect(Highlight) for i,v in next, Players:GetPlayers() do Highlight(v) end Players.PlayerRemoving:Connect(function(plr) local plrname = plr.Name if Storage[plrname] then Storage[plrname]:Destroy() end if connections[plr] then connections[plr]:Disconnect() end end)
 end)
 
+HookMeta:NewButton("Anti-Kick", "Not Instant", function()
+    local player = game:GetService("Players").LocalPlayer
+local old
 
+old = hookmetamethod(game,"___namecall", function(self ,...)
+local method = getnamecallmethod()
+if method == "Kick" or method == 'kick' then
+return warn'blockthekick!'
+end
+return old(self ,...)
+end)
+end)
 
+HookMeta:NewButton("Set WalkSpeed to X", "OP", function()
+    local old
+local humanoid = game:GetService('Players').LocalPlayer.Character.Humanoid
+old = hookmetamethod(game,"__index",function(self,key)
+if self == humanoid and key == "WalkSpeed" then
+return 16
+end
+return old(self,key)
 
+end)
+end)
 
-
+HookMeta:NewButton("Anti-Kick Extend", "OP", function()
+    local registry = getreg()
+for i,v in next, registry do if type(v) == 'function' then local funcinfo = getinfo(v)
+if funcinfo.name == 'kick' then
+hookfunction(funcinfo.func,function(...) return nil end)
+end
+end
+end
+end)
 
 
 
