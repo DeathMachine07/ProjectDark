@@ -18,7 +18,7 @@ local DeepHacks = DeepHack:NewSection("Deep Hack")
 local Commander = Commands:NewSection("Commands")
 local Other = Others:NewSection("Others")
 local ESPs = ESP:NewSection("ESP")
-local HookMeta = Tab:NewSection("Hookmeta Method")
+local HookMeta = AntiCheat:NewSection("Hookmeta Method")
 
 
 --EVERYTHING
