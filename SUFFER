@@ -22,8 +22,8 @@ local ESPs = ESP:NewSection("ESP")
 
 
 --EVERYTHING
-PhysicalAct:NewButton("WalkSpeed", "ToggleSpeed", function() -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
+PhysicalAct:NewSlider("WalkSpeed", "ToggleSpeed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
 end)
 
 AdvancedAct:NewButton("Fly", "FlyUI", function()
@@ -229,7 +229,7 @@ ESPs:NewButton("ESP All", "ESP", function()
 end)
 
 HookMeta:NewButton("Anti-Kick", "Not Instant", function()
-    local player = game:GetService("Players").LocalPlayer
+    local player = game:GetService('Players').LocalPlayer
 local old
 
 old = hookmetamethod(game,"___namecall", function(self ,...)
