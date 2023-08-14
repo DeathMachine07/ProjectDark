@@ -1,5 +1,5 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library:MakeWindow("DeathMachine DeepHacks", "BloodTheme")
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/DeathMachine07/ProjectDark/main/Idk"))()
+local Window = Library.CreateLib("DeathMachine DeepHacks", "BloodTheme")
 
 --TABS
 local Basic = Window:NewTab("Basic")
@@ -22,12 +22,8 @@ local ESPs = ESP:NewSection("ESP")
 
 
 --EVERYTHING
-PhysicalAct:NewSlider("WalkSpeed", "ToggleSpeed", 400, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
-PhysicalAct:NewSlider("JumpPower", "ToggleJump", 400, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+PhysicalAct:NewButton("WalkSpeed", "ToggleSpeed", function() -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 32
 end)
 
 AdvancedAct:NewButton("Fly", "FlyUI", function()
