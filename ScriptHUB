@@ -124,7 +124,7 @@ function DiscordLib:Window(text)
 	TopFrame.Name = "TopFrame"
 	TopFrame.Parent = MainFrame
 	TopFrame.BackgroundColor3 = Color3.fromRGB(153,0,0)
-	TopFrame.BackgroundTransparency = 1.000
+	TopFrame.BackgroundTransparency = 0
 	TopFrame.BorderSizePixel = 0
 	TopFrame.Position = UDim2.new(-0.000658480625, 0, 0, 0)
 	TopFrame.Size = UDim2.new(0, 681, 0, 22)
@@ -1803,7 +1803,7 @@ Dragging = false
 
 		ChannelTitleFrame.Name = "ChannelTitleFrame"
 		ChannelTitleFrame.Parent = ServerFrame
-		ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(54, 57, 63)
+		ChannelTitleFrame.BackgroundColor3 = Color3.fromRGB(103,0,0)
 		ChannelTitleFrame.BorderSizePixel = 0
 		ChannelTitleFrame.Position = UDim2.new(0.294561088, 0, -0.000900391256, 0)
 		ChannelTitleFrame.Size = UDim2.new(0, 429, 0, 40)
@@ -1857,8 +1857,8 @@ Dragging = false
 		ServerChannelHolder.Name = "ServerChannelHolder"
 		ServerChannelHolder.Parent = ServerContentFrame
 		ServerChannelHolder.Active = true
-		ServerChannelHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-		ServerChannelHolder.BackgroundTransparency = 1.000
+		ServerChannelHolder.BackgroundColor3 = Color3.fromRGB(math.random(0,255), math.random(0,255), math.random(0,255))
+		ServerChannelHolder.BackgroundTransparency = 0
 		ServerChannelHolder.BorderSizePixel = 0
 		ServerChannelHolder.Position = UDim2.new(0.00535549596, 0, 0.0241984241, 0)
 		ServerChannelHolder.Selectable = false
@@ -2149,7 +2149,7 @@ Dragging = false
 					TweenService:Create(
 						Button,
 						TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(103,123,196)}
+						{BackgroundColor3 = Color3.fromRGB(0,0,0)}
 					):Play()
 				end)
 				
