@@ -96,7 +96,7 @@ local function ToggleButtonbru() -- Set the frame visibility to the state
         HiButton.Text = "Dis_Activated"
         Yoke = false -- Set the toggle button text to "Off"
     else -- If the frame is not visible
-        HiButton.Text = "Activating("..Tries.." tries left)"
+        HiButton.Text = "Activating"
         Yoke = true -- Set the toggle button text to "On"
     end
 end
@@ -116,7 +116,6 @@ Character:WaitForChild("HumanoidRootPart").Size = Vector3.new(8,2,8)
 
 Character.HumanoidRootPart.Touched:Connect(function(part)
 if part.Parent:FindFirstChild("Humanoid") and part.Parent.Name == "CHAIN" and Yoke == true then
-Tries = Tries - 1
 HiButton.Text = "Activating("..Tries.." tries left)"
 for i,v in pairs(part.Parent:GetDescendants()) do
 if v:IsA("Attachment") or v:IsA("Weld") or v:IsA("Motor6D") or v:IsA("ManualWeld") or v:IsA("BallSocketConstraint") then
