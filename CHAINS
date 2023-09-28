@@ -116,7 +116,6 @@ Character:WaitForChild("HumanoidRootPart").Size = Vector3.new(8,2,8)
 
 Character.HumanoidRootPart.Touched:Connect(function(part)
 if part.Parent:FindFirstChild("Humanoid") and part.Parent.Name == "CHAIN" and Yoke == true then
-HiButton.Text = "Activating("..Tries.." tries left)"
 for i,v in pairs(part.Parent:GetDescendants()) do
 if v:IsA("Attachment") or v:IsA("Weld") or v:IsA("Motor6D") or v:IsA("ManualWeld") or v:IsA("BallSocketConstraint") then
 part.Humanoid.Health -= 100	
