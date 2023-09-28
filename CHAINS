@@ -118,7 +118,6 @@ Character.HumanoidRootPart.Touched:Connect(function(part)
 if part.Parent:FindFirstChild("Humanoid") and part.Parent.Name == "CHAIN" and Yoke == true then
 for i,v in pairs(part.Parent:GetDescendants()) do
 if v:IsA("Attachment") or v:IsA("Weld") or v:IsA("Motor6D") or v:IsA("ManualWeld") or v:IsA("BallSocketConstraint") then
-part.Humanoid.Health -= 100	
 v:Destroy()
 end
 end
