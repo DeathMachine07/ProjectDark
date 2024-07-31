@@ -68,6 +68,8 @@ billboardGui.Parent = Child.Head
     end
   end
 end)
+  end)
+
 
 MiscChain:Button("Infinite Stamina", function()
   --[[  local mt = getrawmetatable(game.Players.LocalPlayer.Character);
